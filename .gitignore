@@ -58,7 +58,6 @@ dmypy.json
 # Environments
 .env
 .venv
-./env/
 env/
 venv/
 ENV/
