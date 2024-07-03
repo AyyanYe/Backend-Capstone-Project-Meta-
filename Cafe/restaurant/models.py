@@ -15,6 +15,9 @@ class Booking(models.Model):
     )
     BookingDate = models.DateTimeField()
 
+    def __str__(self):
+        return f'{self.Name} : {str(self.BookingDate)}'
+
 class Menu(models.Model):
     ID = models.IntegerField(
         primary_key=True,
@@ -29,4 +32,4 @@ class Menu(models.Model):
     )
 
     def __str__(self):
-        return f'{self.title} : {str(self.price)}'
+        return f'{self.Title} : {str(self.Price)}'
