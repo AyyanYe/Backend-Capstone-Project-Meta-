@@ -27,3 +27,6 @@ class Menu(models.Model):
     Inventory = models.IntegerField(
         validators=[MaxValueValidator(99999), MinValueValidator(0)]
     )
+
+    def __str__(self):
+        return f'{self.title} : {str(self.price)}'
