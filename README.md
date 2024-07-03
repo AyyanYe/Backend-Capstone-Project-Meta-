@@ -40,7 +40,7 @@ This Django project serves as a management system for a cafe, providing APIs for
     GET /restaurant/booking/
 - Create a booking:
     POST /restaurant/booking/
-    Request Body Example: { "table_number": 1, "customer_name": "John Doe", "booking_time": "2024-07-05T18:00:00Z" }
+    Request Body Example: { "ID": 1, "Name": "John Doe", "BookingDate": "2024-07-05T18:00:00Z" }
 ### Menu APIs
 - List all menu items:
     GET /restaurant/menu/
